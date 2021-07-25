@@ -1,0 +1,87 @@
+/* khai báo biến  \*/
+:root {
+  
+    --text-color: #222222;
+    --primary-color: #ffffff;
+    --hover-color: #f65e39;
+    --header-height: 70px; 
+}       
+
+* {
+    box-sizing: inherit;
+    line-height: 1.15;
+}
+
+html {
+    font-size:62.5% ;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+}
+/* responsive */
+
+
+
+/* animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes growth {
+    from {
+        opacity: 0;
+        transform: scale(var(--growth-from));
+    }
+    to {
+        opacity: 1;
+        transform: scale(var(--growth-to));
+    }
+
+}
+
+
+/* btn-style */
+.btn {
+    min-width: 124px;
+    height: 34px;
+    text-decoration: none;
+    border: none ;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    padding: 0 12px;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--white-color);
+    color: var(--text-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.6rem;
+}
+
+.btn.btn--size-s {
+    height: 32px;
+    font-size: 12px;
+    padding: 0 8px;
+}
+.btn.btn--primary {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    
+}
+
+.btn.btn--disabled {
+    cursor: default;
+    color:#ccc;
+    background-color: #c3c3c3;
+}
+
+.auth-form__control {
+    display: flex;
+    justify-content: flex-end;
+}
